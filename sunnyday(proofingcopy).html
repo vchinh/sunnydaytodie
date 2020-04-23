@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)file:///C:/Users/XPS/AppData/Local/Temp/d62507d1-5cc8-4d58-aa1c-2d3be6c95b33.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>A sunny day
+</title>
+
+<style>
+body
+{
+	font: 10pt Cousine, monospace;
+	margin: 2em;
+}
+
+h1
+{
+	font-size: 14pt;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+tw-storydata
+{
+	display: block !important;
+}
+
+tw-passagedata
+{
+	display: block !important;
+	line-height: 200%;
+	margin-bottom: 2em;
+	white-space: pre-wrap;
+}
+
+tw-passagedata + tw-passagedata
+{
+	border-top: 1pt dashed black;
+	padding-top: 2em;
+}
+
+tw-passagedata:before
+{
+	content: attr(name);
+	display: block;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>A sunny day
+</h1>
+<tw-storydata name="A sunny day" startnode="1" creator="Twine" creator-version="2.3.5" ifid="FF94A078-1E5E-4842-BE68-90B2BC11616B" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+tw-story {
+	background: white;
+	color: #3d3d3d;
+	font-family: 'Libre Baskerville', serif;
+  	font-size: 16px;
+}
+
+tw-link, .link
+{
+  color: #508ca3;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="A sunny day to die" tags="" position="52,52" size="200,100">###A sunny day to die
+####An interactive short story
+
+(link: "Click here to start.")[==
+The ceiling today looks just as white and cracked as yesterday. Or the day before. Or the day before that.
+
+For as long as she has been laying prone here - how many days has it been again? - it has always stayed the same, with that damp spot getting dangerously moister, but never so much that it starts leaking.
+
+(link: "(Look at the window)")[==
+Today is a sunny day. She can tell from the window at the far corner of the room. From the bed to there is about four steps, maybe three if she makes large strides. But even that much effort seems so far out of her reach now. She wonders if the trees have started sprouting greens. If seagulls have resumed their aggressive scavenging. If the sky has returned to its colour of endless azure.
+
+|choice1&gt;[(Walk to the window) (Stay in bed)]
+(click: "(Walk to the window)")[(display: "Walk to the window")]\
+(click: "(Stay in bed)")[(display: "Stay in bed")]
+(more:)[==There is enough energy in her to turn her head to the nightstand. One bottle of Ambien, open bracket, Zolpidem Tartrate, close bracket, ten milligrams, one hundred tablets. Do not refill. She mentally counts from what she can see from outside the transparent encasing. Five, ten, fifteen, twenty, twenty-five, thirty, thirty-five, forty. Not to mention the ones on the other side she couldn't see. At the very least, it should be two times forty. It isn't exact math, but she's had this bottle for about two weeks. So her very unscientific, very uninspired calculations shouldn't be too far off the mark.
+
+Her brother took fifty pills and he ended up brain dead. Less than an animal, more than a vegetable. In limbo, forever - or at least until someone takes pity on him. 
+
+Who will take pity on her?
+
+On the table, her phone is buzzing. She thinks.	
+
+|choice2&gt;[(Pick up the phone) (Leave it there) (Smash it against the wall)]
+(click: "(Pick up the phone)")[(display: "Pick up the phone")]\
+(click: "(Leave it there)")[(display: "Leave it there")]\
+(click: "(Smash it against the wall)")[(display: "Smash it against the wall")]
+(more:)[==
+Her thumb is picking at her fingernails, she suddenly notices. Pieces of skin flakes fall on her face, like dust, like ash. She raises her fingers to her mouth and tastes them. Like salt.
+
+She's so tired. Maybe sleeping will help. She shuts her eyes.
+
+`***`
+
+|choice3&gt;[(Keep sleeping) (Wake up)]
+(click: "(Keep sleeping)")[(display: "Keep sleeping")]\
+(click: "(Wake up)")[(display: "Wake up")]
+(more:)[==(link: "(Look at the table)")[==
+She turns her head. The sleeping pill bottle is still there.
+
+|choice4&gt;[(Don't grab the bottle) (Grab the bottle)]
+(click: "(Don't grab the bottle)")[(display: "Don't grab the bottle")]\
+(click: "(Grab the bottle)")[(display: "Grab the bottle")]
+(more:)[==(if: $phone is 'on table')[(link: '(Her eyes catch the silent phone on the table.)')[
+Her eyes catch the silent phone on the table. If that version she saw had been reality, she would be dying now.
+
+She wonders how people would react to the news.
+
+She reaches out for the phone.]]
+(if: $phone is 'under pillow')[(link: '(She can feel a hard object digging into her skull beneath the pillow.)')[She can feel a hard object digging into her skull beneath the pillow. She is reminded of the phone that she's shoved there just now. 
+
+If she dies, will anyone will care?
+
+She grabs the phone.]]
+(more:)[==\
+(set: $arrayDial to (a: "Dial 1", "Dial 2", "Dial 3"))
+|choice5&gt;[(Dial random number) (Dial random number) (Dial random number)]
+(click: "(Dial random number)")[
+	(replace: ?choice5)[==
+	She chooses a number at random and dials.
+	(set: $dial to (either: ...$arrayDial))\
+	(set: $arrayDial to it - (a:$dial))
+	(display: $dial)]\
+(more:)[==\
+|choice6&gt;[(Dial next random number) (Dial next random number)]
+(click: "(Dial next random number)")[
+	(replace: ?choice6)[==\
+	She blindly picks the next number on the list.
+	(set: $dial to (either: ...$arrayDial))\
+	(set: $arrayDial to it - (a:$dial))
+	(display: $dial)]\
+(more:)[==\
+|choice7&gt;[(Dial last random number)]
+(click: "(Dial last random number)")[
+	(replace: ?choice7)[==\
+	The last lucky number happens to be someone she doesn't expect.
+	(set: $dial to (either: ...$arrayDial))\
+	(set: $arrayDial to it - (a:$dial))
+	(display: $dial)]\
+(more:)[==\
+(link: '(Put the phone back on the table)')[==\
+She puts the phone back on the table. Suddenly, she feels a sharp pain in her stomach. Like a stab wound. She doubles over, clutching her belly. She realises she's making retching noises.
+
+Maybe the vision she saw earlier was actually her, grabbing the bottle, swallowing the content whole. She turns to look at the table. The bottle is not there.
+
+She falls down on the bed.
+
+`***`
+(more:)[==
+(link: '(Dream)')[(display: 'Space Dream')]
+(more:)[==
+`***`
+
+(link: '(The phone is ringing)')[==
+The phone's buzzing feels like a drill straight inside her skull, tearing apart her brain, yanking her out of blissful oblivion.
+
+She knows the number by heart. Of course, it's him.
+
+It is all she could manage to press the little green button with her shaking hands.
+
+"Your uncle called me."
+
+"So he did."
+
+"I'm driving over there, but is it too late?"
+
+|choice8&gt;[(It isn't) (It is)]
+(click: "(It isn't)")[(display: "It isn't")]\
+(click: "(It is)")[(display: "It is")]</tw-passagedata><tw-passagedata pid="2" name="Walk to the window" tags="" position="279,48.5" size="100,100">(set: $care to it + 1)(replace: ?choice1)[
+She tries to lift herself up and walk towards the window, but her useless body falls back to the mattress with a heavy thump. All the lifeforce in her seems to have dissipated with the morning sun.]</tw-passagedata><tw-passagedata pid="3" name="Stay in bed" tags="" position="390,48.5" size="100,100">(replace: ?choice1)[
+Not like she really cares, anyways. The sky could be as red as blood now, and she wouldn't move an inch.]</tw-passagedata><tw-passagedata pid="4" name="Pick up the phone" tags="" position="276,174.5" size="100,100">(set: $care to it + 1)(replace: ?choice2)[
+She knows who it is. She wants to throw the phone against the wall. She wants to pick it up and yell at him to stop calling, stop pretending to care, because everyone knows the only party always giving is her, until she dries up like a sardine whose live-giving water is sucked up out of its body, until its cracked skin is glued to its frail bones, breakable with the lightest of forces. She wants to-
+
+She grabs the phone, tells him to stop calling, then hangs up.
+
+She turns off the phone for good measure, and stuffs it beneath her pillow.
+(set: $phone to "under pillow")
+There. No more distractions.]</tw-passagedata><tw-passagedata pid="5" name="Leave it there" tags="" position="406,172.5" size="100,100">(replace: ?choice2)[
+She wants to smash it against the wall and watch it break into pieces. Shut up, her brain shouts. Stop trying to pretend like you give a fuck. Because the only party always giving is her - giving, yielding, devoting, opening, granting, caving, bending, offering, begging, until she dries up like a sardine whose live-giving water is sucked up out of its body, until its cracked skin is glued to its frail bones, breakable with the lightest of forces.
+
+Just when the shrill ringing becomes unbearable, it stops. She sighs in relief. (set: $phone to "on table")]</tw-passagedata><tw-passagedata pid="6" name="Smash it against the wall" tags="" position="526,172.5" size="100,100">(replace: ?choice2)[==
+The shrill ringing of the phone pierce her ear drums, cracking her skull wide open. Shut up, shut up, shut up!, her brain shouts. In a sudden surge of energy, she reaches out to grab the offending device, and throws it against the plain white sickening wall.
+The phone shatters into millions of pieces, with it, the noise, and whoever was trying to reach out to her.
+
+All of a sudden, she realises she's sitting up now. In front of her, the sleeping pills bottle.
+
+Her hand grabs it, and she can't believe how easy the action is. She watches as her fingers twist opens the bottle, pouring out some into her palm, and from her palm in her mouth. Her throat works to swallow them as her saliva struggles to lubricate the dry pills, but they finally go down, down, down the long oesophagus tube. Encouraged, she takes more, and more, and more, until the whole bottle is empty.
+
+It is done. She will die, and no one is there to stop her.
+
+(link: '(Close eyes)')[==
+She closes her eyes. The bright light of the sun beams into her eyelids, making her see red. The colour of her own blood.
+
+It feels like centuries, but at long last, red fades to black.
+
+She breathes out, for the last time.
+
+
+
+''GAME OVER''
+
+(link: 'Restart?')[(goto-url:'sunnyday.html')]</tw-passagedata><tw-passagedata pid="7" name="Keep sleeping" tags="" position="275,293.5" size="100,100">(set: $care to it + 1)(replace: ?choice3)[==
+In her dream, she sees herself drenched in her own puddle of tears, she can't stop, she does not understand why. The puddle grows and grows until it becomes a sea, and suddenly she is literally drowning, and she flails and gasps and cries out for help but the salty liquid penetrates her, filling up her lungs, one wave after another, and her voice is smothered. She tries to shout for mommy, but she remembers that her mother is dead, and there is absolutely no one in the world now who would hear her, and that makes her sob even harder, even though all her mother would ever do was yell at her in a desperate attempt to make her stop. Her mother is dead, her brain reminds her again, and so is gone that last restraint tying her to this miserable, painful, hopeless, drowning world. 
+
+As the dark waters of the sea pulls her asunder, she thinks of him and wishes he would be there to see her drown. Do you see how in pain I am right now, she would ask, have you seen what you've done, are you satisfied, does seeing me die hurt you, because I love to see you hurt, and she wants to crawl at her chest and rip off her lungs as it yearns for precious oxygen, god, it hurts so goddamn much-
+
+(link: '(Wake)')[==
+She wakes up with a jolt. The pillow underneath her head is damp.
+
+Her eyes are opened, but she cannot see anything. Has she gone blind? For a split second, she feels an unimaginable surge of relief at that thought. But no - as her retina adjusts, she realises it's only night.</tw-passagedata><tw-passagedata pid="8" name="Wake up" tags="" position="404,290.5" size="100,100">(replace: ?choice3)[==
+This time she wakes up, it is still as sunny as ever, but she is drowned in her own puddle of tears, she can't stop, she does not understand why. She yanks at her face to wipe the tears away, but the pressure on the lacrimal glands seem to induce the production of more liquid, one wave after another, and she suddenly remembers that her mother is dead. She is dead, and there is absolutely no one in the world now who cares if she cries or not, and that makes her cry even harder, even though all her mother would ever do was yell at her in a desperate attempt to make her stop. Her mother is dead, her brain reminds her again, and so is gone that last restraint tying her to this miserable, painful, hopeless, sunny world. Because even if her mother was useless, it's still her mother, and she doesn't want to be labelled a bad child for leaving the parent in mourning, so she sobs and sobs, and her phone is buzzing again she thinks, maybe she will pick it up this time and yell at his face: do you hear me crying now, do you see how in pain I am right now, have you seen what you've done, are you satisfied, does hearing me cry hurt you, because good, that's exactly what I want to do, and she suddenly has the urge to run into the kitchen and stab her own chest with a knife because it hurts so goddamn much-
+
+(link: '(Do it)')[==
+But she is too weak, and all she can do is sob and sob and sob until everything inside her is utterly drained, and the sun finally leaves her alone to drown in the deep cold darkness of the night.</tw-passagedata><tw-passagedata pid="9" name="Don&#39;t grab the bottle" tags="" position="276,405.5" size="100,100">(set: $care to it + 1)(replace: ?choice4)[==
+The small pills seem to mock her - so small, yet so lethal. She can envision herself grabbing the bottle, as if she has become a ghost and is now watching from outside her own body. She observes as another set of her fingers twist opens the bottle, pour some into her palm, and from her palm in her mouth. She sees as her throat works to swallow them as her saliva struggles to lubricate the dry pills, but they finally go down, down, down the long oesophagus tube. Encouraged, the alternative version of herself takes more, and more, and more, until the whole bottle is empty.
+
+She blinks. The vision dissipates, and she is still prone in bed, slightly uncomfortable in the damp spot of tears on her pillow.</tw-passagedata><tw-passagedata pid="10" name="Grab the bottle" tags="" position="402,402.5" size="100,100">(replace: ?choice4)[==
+The small pills seem to mock her - so small, yet so lethal. She can envision herself grabbing the bottle, as if she has become a ghost and is now watching from outside her own body. She observes as another set of her fingers twist opens the bottle, pour some into her palm, and from her palm in her mouth. She sees as her throat works to swallow them as her saliva struggles to lubricate the dry pills, but they finally go down, down, down the long oesophagus tube. Encouraged, the alternative version of herself takes more, and more, and more, until the whole bottle is empty.
+
+She blinks. The vision dissipates, and she is still prone in bed, slightly uncomfortable in the damp spot of tears on her pillow.</tw-passagedata><tw-passagedata pid="11" name="Dial 1" tags="" position="274,524.5" size="100,100">It is her uncle, her mother's brother, who she hasn't spoken to since the funeral.
+
+What's wrong, her uncle asks, it's really late. She answers: Haven't heard from you in awhile - I just want to catch up. Of course, of course, let me move to the living room, you know, the kids are sleeping - are you ok?
+
+|subchoice1&gt;[(I hate your kids) (I'm going to die)]
+(click: "(I hate your kids)")[(replace: ?subchoice1)[
+You know, uncle, I really like you, but I hate your kids. What, sorry, what are you saying? I detest them for having a father - they're so spoiled, they have everything, sometimes I wish I could strangle them, skin them, wear their faces, and become your child instead-
+
+Jesus, kid, are you out of your mind? Yes I am, I'm a horrible person - do you hate me? You're saying some crazy fucked up stuff. What is wrong with you?
+
+I just want to, for once in my life, be completely honest. I'm sick of toeing the line all the time. 
+
+Your mom would be ashamed to-
+
+Well, she already was. She was so ashamed of me, so much that she died. And now I'm going to follow her. There, happy?
+
+Silence on the line. Then, her uncle hangs up.]]
+(click: "(I'm going to die)")[(replace: ?subchoice1)[(set: $care to it+1)
+Uncle, I'm miserable. I want to die. Fucking hell, what are you saying? I'm calling somebody, hold on in there. It's too late, uncle, you live too far away - I'm just letting you know so my body doesn't rot in my room.
+
+Why are you doing this? We love you. You can't do this. You're family.
+
+She laughs. You have a strange way to show your love.
+
+I'm coming tomorrow. Hold on in there. You have to live, for us.
+
+Well, if it's 'for you'.
+
+She hangs up and blocks his number.]]</tw-passagedata><tw-passagedata pid="12" name="Dial 2" tags="" position="406,522.5" size="100,100">It is her tablemate from high school. She's surprised her number is still here. Last they met, in a class reunion some years ago, the girl is an old, weary woman, with husband and three kids, and they have absolutely nothing in common.
+
+The line beeps. Beeps. Beeps. And beeps.
+
+|subchoice2&gt;[(Hang up) (Stay on the line)]
+(click: "(Hang up)")[(replace: ?subchoice2)[
+The girl must be asleep. Set the phone to Do Not Disturb before she went to bed, because any sleep at all is precious when you are laden with children.
+
+She hangs up and sends a text instead: //Hey, I'm dying, and you could've talked to me one last time, maybe saved me. But you chose not to. Now you'll never know how I hated it when you took too much of the table space.//]]
+(click: "(Stay on the line)")[(replace: ?subchoice2)[(set: $care to it+1)
+The girl must be asleep. Set the phone to Do Not Disturb before she goes to bed, because any sleep at all is precious when you are laden with children.
+
+But some stubbornness in her refuses to give up. There are so many things she wants to say to this acquaintance-turned-stranger that she never realised she needs to vocalise. Like how she hated it when the girl took all the table space from her, or laughed in that shrill voice that rang in her ears for hours after, or kept bringing treats and sweets to share, or asked to hang out after Maths class.
+
+How she hated herself for never really accepting the friendship offered.
+
+The beeps die out. An automated voice machine answers: //This number is currently not available. Please try again later.//]]</tw-passagedata><tw-passagedata pid="13" name="Dial 3" tags="" position="527,521.5" size="100,100">It belongs to a crush - an ex-colleague. She almost goes back on her resolve and hangs up when she realises the name. There are a great many things she doesn't remember about him - when they met, how old he was, whether she ever told him how she felt. But she remembers his smell, and how his hand felt in hers.
+
+A yawning voice greets her on the other line: Who's this?
+
+|subchoice3&gt;[(How can you not know?) (Say your name)]
+(click: "(How can you not know?)")[(replace: ?subchoice3)[
+How can you not know? She accuses, a surge of anger rising up in her - When I remember so much about you? Don't you care? Ever? If I tell you I'm committing suicide, will you listen?
+
+This is a prank, isn't it? The guy grouses and hangs up.
+
+Another thing she remembers about him: How he has the worst temper ever when woken up from sleep.]]
+(click: "(Say your name)")[(replace: ?subchoice3)[(set: $care to it+1)
+She says her name.
+
+Sorry, who? Of course, he wouldn't have saved her number. We used to date, she answers. All she can hear from the other line is shuffling. A blanket tossed aside, a shirt hastily put on. He grouses, sleepily: Oh yeah, sure, what's up?
+
+She blurts out: My mom died. And I think I killed her. Did you actually put a knife in her? Smother her with a pillow? Push her off the stairs, or however she died? No. No, I didn't. She put her head in an oven, because she was ashamed of me.
+
+Then no, you didn't kill her. Her love for you killed her. She simply couldn't bear the burden.
+
+So if I choose to live now, is it my burden to bear?
+
+It's your choice.
+
+She doesn't know how to answer, so she hangs up. A minute later, a text arrives from him. //If you'd like, we could go grab tea sometime. I remember you hated coffee.//
+
+She closes the message without replying.]]</tw-passagedata><tw-passagedata pid="14" name="Space Dream" tags="" position="267,639.5" size="100,100">Before someone dies, they dream. She thinks she read this in a comic book somewhere, a long time ago.
+
+Her nocturnal endeavours are often very forgettable. Whatever her twisted mind conjures up in sleep, it quickly vanishes with the morning sun. This time, however, she feels as though there will be no annoyingly sunny day to greet her on the other side.
+
+So she dreams, and remembers.
+
+(link: '(She is in space)')[==
+She is in space, inside an astronaut's suit, floating further and further away from Earth.  A tiny rock drifts towards her, sharp and fast, and before she knew it, there was a hole in the armour.
+
+The air is sucked out of her entire being. Out of instinct, she takes a deep breath and tries to hold it. Pop. She hears her lungs bursting. Pop. Her eyes follow. Pop. Her ear drums. The rest of her body swells up like a stretched balloon, ready to explode at any minute. She opens her mouth to scream, and she feels the saliva on her tongue burning, searing.
+
+There is no Earth, no stars, no moon to send her off. She is loveless, worthless, soulless, but a tiny speck in this vast, expanding vacuum of space.
+
+That calms her, somehow.</tw-passagedata><tw-passagedata pid="15" name="It isn&#39;t" tags="" position="271,754.1000061035156" size="100,100">(replace: ?choice8)[==
+(if: $care &gt;= 5)[\
+She finds that she cannot answer. Her throat seems to be choked with tears.
+
+He answers for her: "It's never too late. As long as you still care."
+
+"Should I? Caring for people is such a burden. And it's painful when it's not returned."
+
+"Dying might be a way out for you, but think about those who you'll leave behind."
+
+(link: '(She wants to say that no one will miss her)')[==
+She wants to say that no one will miss her, but somehow, deep down, she knows it isn't true.
+
+"If I die, what will you do?"
+
+"I'll cry, of course."
+
+"Do you love me?"
+
+"I always have. I thought you knew."
+
+(link: '(The sky is slowly brightening)')[==
+The sky is slowly brightening. She wonders if it will be the colour of endless azure. She stands up from the bed, takes three large strides to the open window, and looks out.
+
+Strangely enough, the stars are brighter from plain old Earth than up there, when she was floating in the vacuum, out in space.
+
+"You're still there?"
+
+"Yes."
+
+"I'm only five minutes away."
+
+"I'll be here."
+
+She hangs up.
+
+Outside, the sun begins to shine.
+
+
+
+''GAME OVER''
+
+(link: 'Restart?')[(goto-url:'sunnyday.html')]]
+(else:)[==\
+"I want to say it isn't, but is it?"
+
+"It's never too late. As long as you still care."
+
+She finds that she cannot answer. Her throat seems to be choked with tears.
+
+(link: '(You woke me up from a dream)')[==
+"You woke me up from a dream. I was in space, dying - bursting from the inside out. There was no one around me. No one cares."
+
+"That's not true-"
+
+"But you know what? I felt peace. The kind I've never felt before in this lifetime."
+
+"Dying might be a way out for you, but think about those who you'll leave behind."
+
+(link: '(The sky is brightening)')[==
+The sky is brightening. Suddenly, she feels scared. She doesn't want to see the sun go up.
+
+"Well, I guess I just don't care enough."
+
+She hangs up, and throws the phone against the wall for good measure. The device shatters into pieces.
+
+She falls to her knees on the ground as her stomach churns and twists again. From her position under the bed, she sees the empty Ambien bottle abandoned in a corner.
+
+So that's it. She's done it. She is dying.
+
+She breathes a sigh of relief, and closes her eyes.
+
+***
+
+Before someone dies, they dream.
+
+She thinks she dreams of a sunny day. She opens her eyes, turns her head, and the Ambien bottle is there on her table, unopened. She gets up, makes three large strides to the open window, and the sky is the colour of endless azure.
+
+
+
+''GAME OVER''
+
+(link: 'Restart?')[(goto-url:'sunnyday.html')]</tw-passagedata><tw-passagedata pid="16" name="It is" tags="" position="406,754.0999755859375" size="100,100">(replace: ?choice8)[==
+(if: $care &gt;= 5)[\
+"I wish I could say otherwise, but it is. I already took the pills."
+
+"Fuck, um, drink a lot of water. Try to vomit. Can you vomit? I'll call an ambulance."
+
+(link: '(Are you going to cry at my funeral?)')[==
+"Are you going to cry at my funeral?"
+
+"Stop it. I'll be there soon, just hang in there."
+
+"Answer me."
+
+She can hear him sighing.
+
+"Of course. What kind of a question is that?"
+
+"I wish I have never known love at all. It is love's burden that kills me."
+
+"What are you saying?"
+
+"I loved my mom, didn't I? But it wasn't returned, not equally. I loved my uncle. I loved my friend. Even the old crush whom I've all but forgotten. And I loved you. But they were all unrequited."
+
+"They aren't."
+
+(link: '(Somehow, deep down, she thinks he's right.)')[==
+Somehow, deep down, she thinks he's right.
+
+Outside, the sky is slowly brightening. Her stomach chooses that moment to twist and churn. She doubles over in pain and drops the phone. In her dream, it wasn't so painful.
+
+She could hear his tiny voice shouting from the phone's speaker. A snicker escapes her. He's so desperate. So unlike him. 
+
+Maybe, just maybe, it wouldn't be so bad to give this life thing another try.
+
+***
+
+She closes her eyes, and thinks the sky outside is the colour of endless azure.
+
+
+
+''GAME OVER''
+
+(link: 'Restart?')[(goto-url:'sunnyday.html')]]
+(else:)[==\
+"It is. I already took the pills."
+
+"I see."
+
+"Are you going to cry at my funeral?"
+
+"Maybe. Do you want me to?"
+
+(link: '(Yes)')[==
+"Yes."
+
+"Then I will."
+
+The line falls silent. She feels like throwing up. The sky is slowly brightening. She prays this will be quicker. She does not want to see the sun go up.
+
+"I wish I have never known love at all. It is love's burden that kills me."
+
+"What do you mean?"
+
+"I loved my mom, didn't I? But it wasn't returned, not equally. I loved my uncle. I loved my friend. Even the old crush whom I've all but forgotten. And I loved you. But they were all unrequited."
+
+"I do love you."
+
+(link: '(It is not enough)')[==
+"It's not enough. Not to make me care." She pauses. "Now, I just want peace".
+
+"Well, if it helps, I get you. I never believed in that adage anyways. How did it go...'better to have loved and lost than never to have loved at all'?"
+
+"That's the bastard."
+
+"Well, have a good journey, wherever you're going next."
+
+"Thanks for nothing."
+
+She hangs up, and closes her eyes.
+
+***
+
+Before someone dies, they dream.
+
+She thinks she dreams of a sunny day. She opens her eyes, turns her head, and the Ambien bottle is there on her table, unopened. She gets up, makes three large strides to the open window, and the sky is the colour of endless azure.
+
+
+
+''GAME OVER''
+
+(link: 'Restart?')[(goto-url:'sunnyday.html')]</tw-passagedata></tw-storydata>
+
+
+
+
+</body></html>
